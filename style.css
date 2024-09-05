@@ -267,3 +267,391 @@ span{
         margin-top: 4rem;
     }
 }
+
+.contact{
+    min-height: 100vh;
+    padding: 5rem 9%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content{
+    text-align: center;
+}
+
+.contact-content h1{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.contact-content p{
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-card{
+    background-color: #161616;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+
+.contact-card i{
+    font-size: 2.5rem;
+    color: #b74b4b;
+    margin-bottom: 1rem;
+}
+
+.contact-card h3{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-card p{
+    font-size: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #b74b4b;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color: #b74b4b;
+    outline: none;
+}
+
+.contact-form button{
+    padding: 1rem 2.8rem;
+    background-color: #b74b4b;
+    border: none;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+
+.education {
+    min-height: 100vh;
+    padding: 5rem 9%;
+    background-color: black;
+    color: white;
+}
+
+.education-content {
+    text-align: center;
+}
+
+.education-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.education-content p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.education-item {
+    background-color: #161616;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    width: 80%;
+    max-width: 800px;
+}
+
+.education-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+
+.education-icon {
+    font-size: 3rem;
+    color: #b74b4b;
+    background-color: #161616;
+    border-radius: 50%;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.education-details h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.education-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #b74b4b;
+}
+
+.education-details p {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+    .education-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .education-icon {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* Basic reset for the Skills page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+.skills {
+    min-height: 100vh;
+    padding: 5rem 9%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills-content {
+    text-align: center;
+}
+
+.skills-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.skills-content p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skill-card {
+    background-color: #161616;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 20rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-card i {
+    font-size: 3rem;
+    color: #b74b4b;
+    margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+    font-size: 1.4rem;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1000px) {
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.certifications {
+    min-height: 100vh;
+    padding: 5rem 9%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.certifications-content {
+    text-align: center;
+}
+
+.certifications-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.certifications-content p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.certifications-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.certification-card {
+    background-color: #161616;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 20rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.certification-card i {
+    font-size: 3rem;
+    color: #b74b4b;
+    margin-bottom: 1rem;
+}
+
+.certification-card h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.certification-card p {
+    font-size: 1.4rem;
+}
+
+.certification-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1000px) {
+    .certifications-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
